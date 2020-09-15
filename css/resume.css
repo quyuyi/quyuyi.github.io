@@ -3,6 +3,14 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
+/*orange: #BD5D38;*/
+
+:root {
+  /* --global-color-primary: #700000f5; */
+  --global-color-primary: #bd5d38;
+  --global-sideNav-width: 17rem;
+}
+
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
@@ -11,7 +19,7 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem; } }
+    padding-left: var(--global-sideNav-width); } }
 
 h1,
 h2,
@@ -21,18 +29,20 @@ h5,
 h6 {
   font-family: 'Saira Extra Condensed', serif;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #343a40; }
 
 h1 {
   font-size: 6rem;
-  line-height: 5.5rem; }
+  line-height: 5.5rem;
+  text-transform: uppercase; }
 
 h2 {
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  text-transform: uppercase; }
 
 .subheading {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
   font-size: 1.35rem; }
@@ -40,14 +50,14 @@ h2 {
 .list-social-icons a {
   color: #495057; }
   .list-social-icons a:hover {
-    color: #BD5D38; }
+    color: var(--global-color-primary); }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #BD5D38; }
+    color: var(--global-color-primary); }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
@@ -61,7 +71,7 @@ h2 {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: var(--global-sideNav-width);
     height: 100vh; }
     #sideNav .navbar-brand {
       display: flex;
@@ -104,12 +114,16 @@ section.resume-section {
     padding-bottom: 3rem !important; } }
 
 .bg-primary {
-  background-color: #BD5D38 !important; }
+  /* background-image: url('../img/background.JPG');
+  background-repeat: no-repeat;
+  background-size: 100%; */
+  background-color: var(--global-color-primary) !important; 
+}
 
 .text-primary {
-  color: #BD5D38 !important; }
+  color: var(--global-color-primary) !important; }
 
 a {
-  color: #BD5D38; }
+  color: var(--global-color-primary); }
   a:hover, a:focus, a:active {
-    color: #824027; }
+    color: var(--global-color-primary); }
